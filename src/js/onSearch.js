@@ -1,15 +1,18 @@
 'use strict';
 
 import apiService from './apiService';
-import getRefs from './refs';
 import cardMarkupTpl from '../templates/cardMarkup.hbs';
-import LoadMoreBtn from './laod-more-btn';
+import LoadMoreBtn from './load-more-btn';
 import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
 import { showAlert, ALERTS } from './alert.js';
 
 const debounce = require('lodash.debounce');
-const refs = getRefs();
+const refs = {
+  searchForm: document.querySelector('.js-search-form'),
+  galleryContainer: document.querySelector('.js-gallery-container'),
+  loadMoreBtn: document.querySelector('.btn-load'),
+};
 const loadMoreBtn = new LoadMoreBtn({
   selector: '[data-action="load-more"]',
   hidden: true,
