@@ -1,0 +1,30 @@
+<form class="form-inline search-form js-search-form">
+  <div class="form-group mx-sm-3 mb-2">
+    <input
+      type="text"
+      class="form-control"
+      name="query"
+      id="searchQuery"
+      placeholder="Search images..."
+      autocomplete="off"
+    />
+  </div>
+  <button type="submit" class="btn btn-submit btn-primary mb-2"></button>
+</form>
+
+<ul class="gallery js-gallery-container"></ul>
+
+<button
+  type="button"
+  id="my-element-selector"
+  class="btn btn-load btn-primary button"
+  data-action="load-more"
+>
+  <span
+    class="spinner-border spinner-border-sm spinner is-hidden"
+    role="status"
+    aria-hidden="true"
+  ></span>
+
+  <span class="label">Show more</span>
+</button>
