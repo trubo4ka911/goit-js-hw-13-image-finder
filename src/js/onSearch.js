@@ -6,6 +6,7 @@ import LoadMoreBtn from './load-more-btn';
 import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
 import { showAlert, ALERTS } from './alert.js';
+import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 const debounce = require('lodash.debounce');
 const refs = {
